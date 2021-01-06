@@ -15,6 +15,8 @@ class GPSearchVC: UIViewController {
     let searchButton        = GPButton()
     let stackview           = UIStackView()
     
+    var isUsernameEntered: Bool{ return !searchtextfield.text!.isEmpty }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setBackgroundImage()
@@ -91,6 +93,11 @@ class GPSearchVC: UIViewController {
     }
     
    @objc func showProfileOfUser(){
+    
+    guard isUsernameEntered else {
+        presentGFAlertOnMainThread(title: "Empty username", message: "Please, Enter a username. We need to know who to look for 😄.", buttonTitle: "Ok")
+         return
+    }
     
         let profileVC       = GPProfileOfUserVC()
         profileVC.username    = searchtextfield.text ?? ""

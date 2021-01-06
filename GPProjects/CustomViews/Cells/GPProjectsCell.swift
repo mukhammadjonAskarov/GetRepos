@@ -61,18 +61,19 @@ class GPProjectsCell: UITableViewCell {
         contentView.addSubview(projectsNameLabel)
         contentView.addSubview(projectsFullName)
         
+        stackView = UIStackView(arrangedSubviews: [watchersCountImage,watchersCountLabel, starsImage, starsGazersCountLabel, forksImage, forksCountLabel])
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis              = .horizontal
         stackView.distribution = .equalCentering
         stackView.spacing = 10
         contentView.addSubview(stackView)
         
-        stackView.addArrangedSubview(watchersCountImage)
-        stackView.addArrangedSubview(watchersCountLabel)
-        stackView.addArrangedSubview(starsImage)
-        stackView.addArrangedSubview(starsGazersCountLabel)
-        stackView.addArrangedSubview(forksImage)
-        stackView.addArrangedSubview(forksCountLabel)
+//        stackView.addArrangedSubview(watchersCountImage)
+//        stackView.addArrangedSubview(watchersCountLabel)
+//        stackView.addArrangedSubview(starsImage)
+//        stackView.addArrangedSubview(starsGazersCountLabel)
+//        stackView.addArrangedSubview(forksImage)
+//        stackView.addArrangedSubview(forksCountLabel)
         
         
         projectsNameLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -97,12 +98,12 @@ class GPProjectsCell: UITableViewCell {
             projectsFullName.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
             
 //
-            watchersCountImage.heightAnchor.constraint(equalToConstant: 15),
-            watchersCountImage.widthAnchor.constraint(equalToConstant: 15),
-            starsImage.heightAnchor.constraint(equalToConstant: 15),
-            starsImage.widthAnchor.constraint(equalToConstant: 18),
-            forksImage.heightAnchor.constraint(equalTo: starsImage.heightAnchor),
-            forksImage.widthAnchor.constraint(equalTo: starsImage.heightAnchor),
+//            watchersCountImage.heightAnchor.constraint(equalToConstant: 15),
+//            watchersCountImage.widthAnchor.constraint(equalToConstant: 15),
+//            starsImage.heightAnchor.constraint(equalToConstant: 15),
+//            starsImage.widthAnchor.constraint(equalToConstant: 18),
+//            forksImage.heightAnchor.constraint(equalTo: starsImage.heightAnchor),
+//            forksImage.widthAnchor.constraint(equalTo: starsImage.heightAnchor),
             
             stackView.topAnchor.constraint(equalTo: projectsFullName.bottomAnchor, constant: 10),
             stackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),

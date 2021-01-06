@@ -26,6 +26,8 @@
 		A2F2F50325949016002BA263 /* GPTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F2F50225949016002BA263 /* GPTitleLabel.swift */; };
 		A2F2F5082594903E002BA263 /* GPSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F2F5072594903E002BA263 /* GPSecondaryTitleLabel.swift */; };
 		A2F2F50E25949099002BA263 /* NetworkManagers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F2F50D25949099002BA263 /* NetworkManagers.swift */; };
+		A2F6314125A5FA8300468CBA /* GPAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F6314025A5FA8300468CBA /* GPAlertVC.swift */; };
+		A2F6314725A5FBCE00468CBA /* UIExxtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F6314625A5FBCE00468CBA /* UIExxtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		A2F2F50225949016002BA263 /* GPTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTitleLabel.swift; sourceTree = "<group>"; };
 		A2F2F5072594903E002BA263 /* GPSecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSecondaryTitleLabel.swift; sourceTree = "<group>"; };
 		A2F2F50D25949099002BA263 /* NetworkManagers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagers.swift; sourceTree = "<group>"; };
+		A2F6314025A5FA8300468CBA /* GPAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPAlertVC.swift; sourceTree = "<group>"; };
+		A2F6314625A5FBCE00468CBA /* UIExxtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExxtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,11 +130,11 @@
 		A2657D33259380870091522F /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				A2657D5B25938EB30091522F /* TextFields */,
 				A261FF7625A5A84800835E61 /* Cells */,
 				A2F2F4F925948FBA002BA263 /* Labels */,
 				A2ADF0A025945F8A0023E6A2 /* ViewControllers */,
 				A26526C0259393CF006569D4 /* Buttons */,
-				A2657D5B25938EB30091522F /* TextFields */,
 				A2657D45259382250091522F /* ImageViews */,
 				A2657D34259380910091522F /* Screens */,
 			);
@@ -185,6 +189,7 @@
 		A295BBDC25936A3D00A65F45 /* GPProjects */ = {
 			isa = PBXGroup;
 			children = (
+				A2F6314525A5FBBB00468CBA /* Extensions */,
 				A223301C2595BC970012D3E6 /* Model */,
 				A2F2F50C25949089002BA263 /* Managers */,
 				A2ADF09B25945F4C0023E6A2 /* Assets */,
@@ -236,6 +241,7 @@
 			children = (
 				A2657D40259381C30091522F /* GPSearchVC.swift */,
 				A2F2F4F425947EBD002BA263 /* GPProfileOfUserVC.swift */,
+				A2F6314025A5FA8300468CBA /* GPAlertVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -256,6 +262,14 @@
 				A2F2F50D25949099002BA263 /* NetworkManagers.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		A2F6314525A5FBBB00468CBA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A2F6314625A5FBCE00468CBA /* UIExxtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,6 +403,7 @@
 			files = (
 				A261FF7825A5A86900835E61 /* GPProjectsCell.swift in Sources */,
 				A2F2F50E25949099002BA263 /* NetworkManagers.swift in Sources */,
+				A2F6314125A5FA8300468CBA /* GPAlertVC.swift in Sources */,
 				A26526C2259393EB006569D4 /* GPButton.swift in Sources */,
 				A2F2F50325949016002BA263 /* GPTitleLabel.swift in Sources */,
 				A2657D41259381C30091522F /* GPSearchVC.swift in Sources */,
@@ -400,6 +415,7 @@
 				A2657D5725938E070091522F /* GPTextField.swift in Sources */,
 				A223301E2595BCB20012D3E6 /* User.swift in Sources */,
 				A295BBE025936A3D00A65F45 /* SceneDelegate.swift in Sources */,
+				A2F6314725A5FBCE00468CBA /* UIExxtensions.swift in Sources */,
 				A2F2F4F525947EBE002BA263 /* GPProfileOfUserVC.swift in Sources */,
 				A223302E2595BF000012D3E6 /* GPErrors.swift in Sources */,
 			);

@@ -20,6 +20,7 @@ class NetworkManager {
        
         guard let url = URL(string: endPoint) else {
             completed(.failure(.invalidUsername))
+            
             return
         }
         
