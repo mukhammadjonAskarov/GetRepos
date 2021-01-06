@@ -98,6 +98,7 @@ class GPSearchVC: UIViewController {
         presentGFAlertOnMainThread(title: "Empty username", message: "Please, Enter a username. We need to know who to look for 😄.", buttonTitle: "Ok")
          return
     }
+
     
         let profileVC       = GPProfileOfUserVC()
         profileVC.username    = searchtextfield.text ?? ""

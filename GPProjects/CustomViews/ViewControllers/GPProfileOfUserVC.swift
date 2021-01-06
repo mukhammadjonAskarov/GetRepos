@@ -112,7 +112,9 @@ class GPProfileOfUserVC: UIViewController {
                 }
                 
             case .failure(_):
-                print("error has been detected")
+                
+                self.presentGFAlertOnMainThread(title: "Invalid Username", message: "Please, Double check the username and try again", buttonTitle: "Ok")
+                
             }
         }
     }
